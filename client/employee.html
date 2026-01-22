@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>employee dashboard</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="page">
+    <div class="topbar">
+      <div class="badge" id="welcomeText">welcome</div>
+      <button class="logout" onclick="logout()">logout</button>
+    </div>
+
+    <div class="dashboard-grid">
+      <div class="card">
+        <h2>submit daily report</h2>
+
+        <div class="input-group">
+          <label>date</label>
+          <input type="date" id="date" />
+        </div>
+
+        <div class="input-group">
+          <label>work report</label>
+          <textarea id="work" placeholder="write your daily work report..."></textarea>
+        </div>
+
+        <button class="btn" onclick="submitReport()">submit report</button>
+        <p id="msg" class="msg"></p>
+      </div>
+
+      <div class="table-wrap">
+        <h2>all employee reports</h2>
+
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>employee</th>
+                <th>date</th>
+                <th>report</th>
+              </tr>
+            </thead>
+            <tbody id="reportTable"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/employee.js"></script>
+</body>
+</html>

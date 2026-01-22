@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>daily report login</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="page">
+    <div class="container">
+      <div class="hero">
+        <h1>daily work report system</h1>
+        <p>
+          submit daily reports, track employee progress, and keep everything organized.
+          fast. secure. modern.
+        </p>
+
+        <ul>
+          <li>employees can submit daily reports</li>
+          <li>all employees can view all reports</li>
+          <li>admin can edit & delete reports</li>
+          <li>works on mobile, tablet & laptop</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>login</h2>
+
+        <div class="input-group">
+          <label>email</label>
+          <input type="email" id="email" placeholder="enter your email" />
+        </div>
+
+        <div class="input-group">
+          <label>password</label>
+          <input type="password" id="password" placeholder="enter your password" />
+        </div>
+
+        <button class="btn" onclick="login()">login now</button>
+
+        <p id="msg" class="msg" style="color:#fca5a5;"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/login.js"></script>
+</body>
+</html>
